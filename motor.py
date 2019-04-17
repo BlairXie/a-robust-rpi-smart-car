@@ -99,6 +99,8 @@ def motion_ctrol(child_pipe):
                    #print(run_flag)
             #except:
                 #pass
+                
+            #返回是否有可供读取的数据
             if child_pipe.poll():
                 run_flag = child_pipe.recv()
             #if share_state.value != -1:
