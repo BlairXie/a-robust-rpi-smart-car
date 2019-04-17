@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel=stylesheet type=text/css href="./static/flask_server.css">
+<body>
+    <h1>RPI Smart Car Live Streaming</h1>
+         <h3><img src="{{ url_for('video_feed') }}" width="100%"></h3> 
+	 
+
+
+<div align="center">
+<form action="" method ="post" target="myIframe">
+<!-- <button name="go" type="submit" value="go"><img src="./static/a.png"></button> -->
+<!-- <br> -->
+<h1> Motion Control Console <h1>
+<input id="up"  type="submit" name="button" value="up" style="background-image: url(./static/up.png);" >
+<br><br>
+<input id="left" type="submit" name="button" value="lef" style="background-image: url(./static/left.png);">
+<input id="right" type="submit" name="button" value="rig" style="background-image: url(./static/right.png);">
+<br><br>
+<input id="pause" type="submit" name="button" value="pa" style="background-image: url(./static/pause.png);">
+</form>
+</div>
+
+<iframe style="display:none" id="myIframe" name="myIframe"> </iframe>
+</body>
+</html>

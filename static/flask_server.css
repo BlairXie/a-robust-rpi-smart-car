@@ -1,0 +1,14 @@
+h1 {
+	font-size:50px;
+	text-align:center;
+}
+
+#left{
+	margin-right:400px;
+}
+
+input[type="submit"]{
+	font-size:90px;
+	background-repeat: no-repeat;
+	color: transparent;
+}
